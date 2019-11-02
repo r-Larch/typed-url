@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "url-matcher": [
+        "dist/url-matcher"
+      ],
+      "url-matcher/*": [
+        "dist/url-matcher/*"
+      ]
+    }
   }
 }
