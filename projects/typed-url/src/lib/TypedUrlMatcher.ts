@@ -6,7 +6,7 @@ import { RegexValidator } from './validators/RegexValidator';
 import { EnumValidator } from './validators/EnumValidator';
 import { ParameterTypeCollection, TypedUrlConfig, ParameterType } from './typedUrl';
 import { defaultUrlMatcher } from './defaultUrlMatcher';
-import { TypedParam } from './params/TypedParam';
+import { TypedParam } from './parameters/TypedParam';
 import { debug } from './utils';
 
 

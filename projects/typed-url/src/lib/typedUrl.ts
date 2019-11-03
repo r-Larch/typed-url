@@ -10,7 +10,7 @@ import { TypedUrlMatcher } from './TypedUrlMatcher';
  *
  * ### app-routing.module.ts
  * ```typescript
- * import { typedUrl } from '@typed-url';
+ * import { typedUrl } from 'typed-url';
  * import { UserComponent, UserRouteParams } from './user/user.component';
  *
  * const routes = [
@@ -31,7 +31,7 @@ import { TypedUrlMatcher } from './TypedUrlMatcher';
  *
  * ### user.component.ts
  * ```typescript
- * import { getTypedParams } from '@typed-url';
+ * import { getTypedParams } from 'typed-url';
  *
  * export interface UserRouteParams {
  *   id: number;

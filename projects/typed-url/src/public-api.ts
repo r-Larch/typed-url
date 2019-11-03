@@ -4,7 +4,7 @@
 
 import { typedUrl } from './lib/typedUrl';
 import { TypeValidator } from './lib/TypeValidator';
-import { typedParams, getTypedParams } from './lib/params/typedParams';
+import { typedParams, getTypedParams } from './lib/parameters/typedParams';
 
 export {
   // create typed-url
