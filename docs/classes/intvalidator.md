@@ -23,7 +23,7 @@
 
 ▸ **matches**(`value`: string): *boolean*
 
-*Defined in [lib/validators/IntValidator.ts:6](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/validators/IntValidator.ts#L6)*
+*Defined in [lib/validators/IntValidator.ts:6](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/validators/IntValidator.ts#L6)*
 
 **Parameters:**
 
@@ -39,7 +39,7 @@ ___
 
 ▸ **parse**(`value`: string): *number*
 
-*Defined in [lib/validators/IntValidator.ts:10](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/validators/IntValidator.ts#L10)*
+*Defined in [lib/validators/IntValidator.ts:10](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/validators/IntValidator.ts#L10)*
 
 **Parameters:**
 

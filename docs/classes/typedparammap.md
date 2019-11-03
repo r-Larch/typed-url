@@ -37,7 +37,7 @@
 
 \+ **new TypedParamMap**(`param`: ParamMap): *[TypedParamMap](typedparammap.md)*
 
-*Defined in [lib/params/TypedParamMap.ts:5](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/params/TypedParamMap.ts#L5)*
+*Defined in [lib/parameters/TypedParamMap.ts:5](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/parameters/TypedParamMap.ts#L5)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ Name | Type |
 
 • **param**: *ParamMap*
 
-*Defined in [lib/params/TypedParamMap.ts:8](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/params/TypedParamMap.ts#L8)*
+*Defined in [lib/parameters/TypedParamMap.ts:8](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/parameters/TypedParamMap.ts#L8)*
 
 ## Accessors
 
@@ -61,7 +61,7 @@ Name | Type |
 
 • **get keys**(): *string[]*
 
-*Defined in [lib/params/TypedParamMap.ts:11](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/params/TypedParamMap.ts#L11)*
+*Defined in [lib/parameters/TypedParamMap.ts:11](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/parameters/TypedParamMap.ts#L11)*
 
 **Returns:** *string[]*
 
@@ -71,7 +71,7 @@ Name | Type |
 
 ▸ **get**<**T**>(`name`: string): *T | null*
 
-*Defined in [lib/params/TypedParamMap.ts:15](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/params/TypedParamMap.ts#L15)*
+*Defined in [lib/parameters/TypedParamMap.ts:15](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/parameters/TypedParamMap.ts#L15)*
 
 **Type parameters:**
 
@@ -91,7 +91,7 @@ ___
 
 ▸ **getAll**(`name`: string): *any[]*
 
-*Defined in [lib/params/TypedParamMap.ts:19](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/params/TypedParamMap.ts#L19)*
+*Defined in [lib/parameters/TypedParamMap.ts:19](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/parameters/TypedParamMap.ts#L19)*
 
 **Parameters:**
 
@@ -107,7 +107,7 @@ ___
 
 ▸ **getParams**<**TParams**>(): *TParams*
 
-*Defined in [lib/params/TypedParamMap.ts:23](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/params/TypedParamMap.ts#L23)*
+*Defined in [lib/parameters/TypedParamMap.ts:23](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/parameters/TypedParamMap.ts#L23)*
 
 **Type parameters:**
 
@@ -121,7 +121,7 @@ ___
 
 ▸ **has**(`name`: string): *boolean*
 
-*Defined in [lib/params/TypedParamMap.ts:13](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/params/TypedParamMap.ts#L13)*
+*Defined in [lib/parameters/TypedParamMap.ts:13](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/parameters/TypedParamMap.ts#L13)*
 
 **Parameters:**
 

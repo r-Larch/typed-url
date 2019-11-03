@@ -27,6 +27,7 @@ Build-in types
 | enum              | ['val1', 'val2']          | string           |
 | custom validators | new CustomTypeValidator() | depends on you 😁|
 
+## [Fiddle on stackblitz.com](https://stackblitz.com/edit/angular-typed-url?file=src%2Fapp%2Fapp-routing.module.ts)
 
 ## Usage
 

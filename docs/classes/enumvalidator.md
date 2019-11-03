@@ -31,7 +31,7 @@
 
 \+ **new EnumValidator**(`enumValues`: string[]): *[EnumValidator](enumvalidator.md)*
 
-*Defined in [lib/validators/EnumValidator.ts:4](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/validators/EnumValidator.ts#L4)*
+*Defined in [lib/validators/EnumValidator.ts:4](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/validators/EnumValidator.ts#L4)*
 
 **Parameters:**
 
@@ -47,7 +47,7 @@ Name | Type |
 
 • **enumValues**: *string[]*
 
-*Defined in [lib/validators/EnumValidator.ts:7](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/validators/EnumValidator.ts#L7)*
+*Defined in [lib/validators/EnumValidator.ts:7](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/validators/EnumValidator.ts#L7)*
 
 ## Methods
 
@@ -55,7 +55,7 @@ Name | Type |
 
 ▸ **matches**(`value`: string): *boolean*
 
-*Defined in [lib/validators/EnumValidator.ts:10](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/validators/EnumValidator.ts#L10)*
+*Defined in [lib/validators/EnumValidator.ts:10](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/validators/EnumValidator.ts#L10)*
 
 **Parameters:**
 
@@ -71,7 +71,7 @@ ___
 
 ▸ **parse**(`value`: string): *string*
 
-*Defined in [lib/validators/EnumValidator.ts:14](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/validators/EnumValidator.ts#L14)*
+*Defined in [lib/validators/EnumValidator.ts:14](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/validators/EnumValidator.ts#L14)*
 
 **Parameters:**
 
