@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "doc": "typedoc --mode file --plugin typedoc-plugin-markdown --tsconfig projects/typed-url/tsconfig.lib.json --out docs/ ",
+    "doc": "typedoc --mode file --plugin typedoc-plugin-markdown --readme README.md --tsconfig projects/typed-url/tsconfig.lib.json --out docs/ ",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

@@ -3,26 +3,136 @@
 # typed-url
 
 # typed-url
+> Angular Router helper for typed URL parameters.
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+## Installation
 
-## Code scaffolding
+typed-url is available as an NPM package. You can install typed-url
+in your Angular project as usual:
 
-Run `ng generate component component-name --project typed-url` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project typed-url`.
-> Note: Don't forget to add `--project typed-url` or else it will be added to the default project in your `angular.json` file. 
+```bash
+$ npm install typed-url --save-dev
+```
 
-## Build
+## What it does
 
-Run `ng build typed-url` to build the project. The build artifacts will be stored in the `dist/` directory.
+It allows applying type constraints to angular router URL route parameters.
 
-## Publishing
+Consider the URL `/user/:id/:name`. One could wish to only allow integers
+numbers in place of `:id` **typed-url makes this posible**.
 
-After building your library with `ng build typed-url`, go to the dist folder `cd dist/typed-url` and run `npm publish`.
+Build-in types
 
-## Running unit tests
+| type              | syntax                    | result type      |
+|-------------------|---------------------------|------------------|
+| integer           | 'int'                     | number           |
+| string            | 'string'                  | string           |
+| regex             | /^regex$/                 | RegExpMatchArray |
+| enum              | ['val1', 'val2']          | string           |
+| custom validators | new CustomTypeValidator() | depends on you 😁|
 
-Run `ng test typed-url` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Further help
+** app-routing.module.ts **
+```typescript
+import { typedUrl } from 'typed-url';
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+const routes: Routes = [
+  { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'cars-list', 
+    children: [
+      // this route only matchs for valid url params
+      {
+        matcher: typedUrl<CarListRouteParams>(':sort/:sortDir/:color/:constructed/:make', {
+          sort: ['name', 'make', 'constructed'],
+          sortDir: ['asc', 'desc'],
+          color: /^([1-9a-f]{6})$/, // regex produces the result type `RegExpMatchArray`
+          constructed: 'int',
+          make: 'string'
+        }),
+        component: CarListComponent
+      },
+      // catch all invalid and redirect back to default filter.
+      { path: '**', redirectTo: 'name/asc/red/2019/audi' }
+    ]
+  },
+  { path: '**', component: PageNotFoundComponent },
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+```
+
+** CarListComponent **
+```typescript
+import { getTypedParams } from 'typed-url';
+
+export interface CarListRouteParams {
+  sort: 'name' | 'make' | 'constructed';
+  sortDir: 'asc' | 'desc';
+  color: RegExpMatchArray;
+  constructed: number;
+  make: string;
+}
+
+@Component({selector: 'car-list'})
+export class CarListComponent {
+  constructor(
+    public route: ActivatedRoute
+  ) {
+    this.route.paramMap
+      .pipe(getTypedParams<CarListRouteParams>())
+      .subscribe(_ => {
+        // all params have the correct type
+        const sort = _.sort;
+        const sortDir = _.sortDir;
+        const color = _.color[0]; // because it's of type `RegExpMatchArray`
+        const constructed = _.constructed;
+        const make = _.make;
+
+        import { isNumber } from 'util';
+
+        console.assert( isNumber(constructed) ); // shows -> true
+      });
+  }
+}
+```
+
+### Specialized usage - custom TypeValidator
+
+For the above example one could write a custom TypeValidator
+for the `CarListRouteParams.color` field.
+
+```typescript
+class HexColorValidator extends TypeValidator {
+
+  matches(value: string): boolean {
+    return /^([1-9a-f]{6})$/.test(value);
+  }
+
+  parse(value: string) {
+    return `#${value}`;
+  }
+}
+
+// and use it like:
+const routes = [
+  { 
+    matcher: typedUrl<ColorRouteParams>(':color', {
+      color: new HexColorValidator()
+    }),
+    component: ColorComponent
+  }
+];
+
+interface ColorRouteParams {
+  color: string;
+}
+```
+
+## Docs
+
+Coming soon..
