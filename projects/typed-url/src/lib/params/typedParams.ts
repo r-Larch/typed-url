@@ -15,7 +15,7 @@ import { TypedParamMap } from './TypedParamMap';
  *
  * ```typescript
  * this.route.paramMap
- *   .pipe(typedParams<UserRouteParams>())
+ *   .pipe(typedParams())
  *   .subscribe(_ => {
  *     this.userId = _.get<number>('id');
  *     this.userName = _.get<string>('name');

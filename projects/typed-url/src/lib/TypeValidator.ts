@@ -1,7 +1,7 @@
 import { TypedUrlConfig } from './typedUrl';
 
 /**
- * Extend this type to create custom TypeValidator
+ * Extend this type to create custom `TypeValidator`s
  *
  * Example:
  *
