@@ -1,11 +1,13 @@
 
 
-export class TypedParam<T = any> extends String {
+export class TypedParam<T = any> {
   constructor(
-    original: string,
+    public original: string,
     public value: T
-  ) {
-    super(original);
+  ) { }
+
+  toString() {
+    return this.original;
   }
 }
 
