@@ -7,7 +7,7 @@ typed-url is available as an NPM package. You can install typed-url
 in your Angular project as usual:
 
 ```bash
-$ npm install typed-url --save-dev
+$ npm install typed-url --save
 ```
 
 ## What it does
@@ -133,4 +133,5 @@ interface ColorRouteParams {
 
 ## Docs
 
-Coming soon..
+### [Read the documentation](https://github.com/r-Larch/typed-url/blob/master/docs/globals.md)
+

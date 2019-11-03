@@ -79,7 +79,7 @@
 
 \+ **new TypedParam**(`original`: string, `value`: T): *[TypedParam](typedparam.md)*
 
-Defined in lib/params/TypedParam.ts:3
+*Defined in [lib/params/TypedParam.ts:3](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/params/TypedParam.ts#L3)*
 
 **Parameters:**
 
@@ -108,7 +108,7 @@ ___
 
 • **value**: *T*
 
-Defined in lib/params/TypedParam.ts:6
+*Defined in [lib/params/TypedParam.ts:6](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/params/TypedParam.ts#L6)*
 
 ___
 

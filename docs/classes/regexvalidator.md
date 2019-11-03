@@ -33,7 +33,7 @@
 
 \+ **new RegexValidator**(`regex`: RegExp): *[RegexValidator](regexvalidator.md)*
 
-Defined in lib/validators/RegexValidator.ts:8
+*Defined in [lib/validators/RegexValidator.ts:8](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/validators/RegexValidator.ts#L8)*
 
 **Parameters:**
 
@@ -49,7 +49,7 @@ Name | Type |
 
 • **config**: *[TypedUrlConfig](../interfaces/typedurlconfig.md)*
 
-Defined in lib/validators/RegexValidator.ts:8
+*Defined in [lib/validators/RegexValidator.ts:8](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/validators/RegexValidator.ts#L8)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **regex**: *RegExp*
 
-Defined in lib/validators/RegexValidator.ts:11
+*Defined in [lib/validators/RegexValidator.ts:11](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/validators/RegexValidator.ts#L11)*
 
 ## Methods
 
@@ -65,7 +65,7 @@ Defined in lib/validators/RegexValidator.ts:11
 
 ▸ **initialize**(`config`: [TypedUrlConfig](../interfaces/typedurlconfig.md)): *void*
 
-Defined in lib/validators/RegexValidator.ts:14
+*Defined in [lib/validators/RegexValidator.ts:14](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/validators/RegexValidator.ts#L14)*
 
 **Parameters:**
 
@@ -81,7 +81,7 @@ ___
 
 ▸ **matches**(`value`: string): *boolean*
 
-Defined in lib/validators/RegexValidator.ts:23
+*Defined in [lib/validators/RegexValidator.ts:23](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/validators/RegexValidator.ts#L23)*
 
 **Parameters:**
 
@@ -97,7 +97,7 @@ ___
 
 ▸ **parse**(`value`: string): *RegExpExecArray*
 
-Defined in lib/validators/RegexValidator.ts:27
+*Defined in [lib/validators/RegexValidator.ts:27](https://github.com/r-Larch/typed-url/blob/03cb924/projects/typed-url/src/lib/validators/RegexValidator.ts#L27)*
 
 **Parameters:**
 

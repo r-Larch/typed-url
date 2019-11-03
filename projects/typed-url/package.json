@@ -1,6 +1,10 @@
 {
   "name": "typed-url",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "repository": {
+    "url": "https://github.com/r-Larch/typed-url.git",
+    "type": "git"
+  },
   "author": {
     "name": "René Larch",
     "email": "renelarch@gmail.com",
