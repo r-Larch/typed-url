@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "url-matcher": [
-        "dist/url-matcher"
+      "typed-url": [
+        "dist/typed-url"
       ],
-      "url-matcher/*": [
-        "dist/url-matcher/*"
+      "typed-url/*": [
+        "dist/typed-url/*"
       ]
     }
   }

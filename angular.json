@@ -3,33 +3,33 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "url-matcher": {
+    "typed-url": {
       "projectType": "library",
-      "root": "projects/url-matcher",
-      "sourceRoot": "projects/url-matcher/src",
+      "root": "projects/typed-url",
+      "sourceRoot": "projects/typed-url/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/url-matcher/tsconfig.lib.json",
-            "project": "projects/url-matcher/ng-package.json"
+            "tsConfig": "projects/typed-url/tsconfig.lib.json",
+            "project": "projects/typed-url/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/url-matcher/src/test.ts",
-            "tsConfig": "projects/url-matcher/tsconfig.spec.json",
-            "karmaConfig": "projects/url-matcher/karma.conf.js"
+            "main": "projects/typed-url/src/test.ts",
+            "tsConfig": "projects/typed-url/tsconfig.spec.json",
+            "karmaConfig": "projects/typed-url/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/url-matcher/tsconfig.lib.json",
-              "projects/url-matcher/tsconfig.spec.json"
+              "projects/typed-url/tsconfig.lib.json",
+              "projects/typed-url/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -38,5 +38,5 @@
         }
       }
     }},
-  "defaultProject": "url-matcher"
+  "defaultProject": "typed-url"
 }
