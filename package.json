@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-lib": "ng build typed-url --prod",
     "test": "ng test",
     "doc": "typedoc --mode file --plugin typedoc-plugin-markdown --readme README.md --tsconfig projects/typed-url/tsconfig.lib.json --out docs/ ",
     "lint": "ng lint",
