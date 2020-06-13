@@ -1,0 +1,25 @@
+<code>
+  &lt;user-list>
+</code>
+
+<div>
+  <mat-nav-list>
+    <a [routerLink]="['../']" mat-list-item>
+      <mat-icon matListIcon>keyboard_backspace</mat-icon>
+      <span matLine> back to home </span>
+    </a>
+  </mat-nav-list>
+</div>
+
+<mat-card>
+
+  <mat-nav-list>
+    <h3 matSubheader>Users</h3>
+
+    <a mat-list-item *ngFor="let user of users" [routerLink]="[user.id, user.username]" routerLinkActive="active">
+      <mat-icon matListIcon>account_circle</mat-icon>
+      <span matLine> {{user.fullName}} </span>
+    </a>
+  </mat-nav-list>
+
+</mat-card>

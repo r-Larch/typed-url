@@ -1,0 +1,41 @@
+<code>
+  &lt;user>
+</code>
+
+<div>
+  <mat-nav-list>
+    <a [routerLink]="['../../']" mat-list-item>
+      <mat-icon matListIcon>keyboard_backspace</mat-icon>
+      <span matLine> back to all users </span>
+    </a>
+  </mat-nav-list>
+</div>
+
+<mat-card>
+
+  <h3 matSubheader>User</h3>
+
+  <mat-card-header>
+    <div mat-card-avatar>
+      <mat-icon matListIcon>account_circle</mat-icon>
+    </div>
+    <mat-card-title> {{user.fullName}} </mat-card-title>
+    <mat-card-subtitle> #{{user.id}} {{user.username}} </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-nav-list>
+      <a [routerLink]="['../../', user.username, 'f2f200']" mat-list-item>
+        <mat-icon matListIcon>settings</mat-icon>
+        <div matLine>
+          open settings
+          <div>
+            <small>
+              Note this route has such a crazy path that it only matches<br>
+              because of the `typedUrl(..)` matcher in the previous route.
+            </small>
+          </div>
+        </div>
+      </a>
+    </mat-nav-list>
+  </mat-card-content>
+</mat-card>

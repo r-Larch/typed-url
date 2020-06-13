@@ -1,0 +1,29 @@
+<code>
+  &lt;user-settings>
+</code>
+
+<div>
+  <mat-nav-list>
+    <a [routerLink]="['../../']" mat-list-item>
+      <mat-icon matListIcon>keyboard_backspace</mat-icon>
+      <span matLine> back to {{user.fullName}} </span>
+    </a>
+  </mat-nav-list>
+</div>
+
+<mat-card>
+
+  <h3 matSubheader>Settings for {{user.fullName}}</h3>
+
+  <mat-card-header>
+    <div mat-card-avatar>
+      <mat-icon matListIcon>settings</mat-icon>
+    </div>
+    <mat-card-title> {{user.fullName}} </mat-card-title>
+    <mat-card-subtitle> #{{user.id}} {{user.username}} </mat-card-subtitle>
+    <mat-card-content>
+      color: {{color}}
+    </mat-card-content>
+  </mat-card-header>
+
+</mat-card>
