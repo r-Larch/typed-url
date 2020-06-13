@@ -40,9 +40,9 @@
 
 ###  ParameterType
 
-Ƭ **ParameterType**: *"string" | RegExp | [TypeValidator](classes/typevalidator.md) | string[] | "int"*
+Ƭ **ParameterType**: *"string" | RegExp‹› | [TypeValidator](classes/typevalidator.md)‹› | "int" | string[]*
 
-*Defined in [lib/typedUrl.ts:72](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/typedUrl.ts#L72)*
+*Defined in [lib/typedUrl.ts:72](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/typedUrl.ts#L72)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 Ƭ **ParameterTypeCollection**: *object*
 
-*Defined in [lib/typedUrl.ts:67](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/typedUrl.ts#L67)*
+*Defined in [lib/typedUrl.ts:67](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/typedUrl.ts#L67)*
 
 #### Type declaration:
 
@@ -60,7 +60,7 @@ ___
 
 Ƭ **TypedParamValue**: *[TypedParam](classes/typedparam.md)‹T› & string*
 
-*Defined in [lib/parameters/TypedParam.ts:14](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/parameters/TypedParam.ts#L14)*
+*Defined in [lib/parameters/TypedParam.ts:14](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/parameters/TypedParam.ts#L14)*
 
 ## Functions
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **defaultUrlMatcher**(`segments`: UrlSegment[], `segmentGroup`: UrlSegmentGroup, `route`: Route): *UrlMatchResult | null*
 
-*Defined in [lib/defaultUrlMatcher.ts:11](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/defaultUrlMatcher.ts#L11)*
+*Defined in [lib/defaultUrlMatcher.ts:11](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/defaultUrlMatcher.ts#L11)*
 
 The Angular default url matcher!
 Copyied from: https://github.com/angular/angular/blob/ac9d044cad4fee47ed6bfd44f905b546b41952cc/packages/router/src/shared.ts#L121
@@ -88,9 +88,9 @@ ___
 
 ###  getTypedParams
 
-▸ **getTypedParams**<**TRouteParams**>(): *OperatorFunction‹ParamMap, TRouteParams›*
+▸ **getTypedParams**‹**TRouteParams**›(): *OperatorFunction‹ParamMap, TRouteParams›*
 
-*Defined in [lib/parameters/typedParams.ts:55](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/parameters/typedParams.ts#L55)*
+*Defined in [lib/parameters/typedParams.ts:55](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/parameters/typedParams.ts#L55)*
 
 Converts the `route.paramMap` of the `ActivatedRoute`
 to a typed parameters object `TRouteParams`
@@ -129,7 +129,7 @@ ___
 
 ▸ **typedParams**(): *OperatorFunction‹ParamMap, [TypedParamMap](classes/typedparammap.md)›*
 
-*Defined in [lib/parameters/typedParams.ts:25](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/parameters/typedParams.ts#L25)*
+*Defined in [lib/parameters/typedParams.ts:25](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/parameters/typedParams.ts#L25)*
 
 Converts the `route.paramMap` of the `ActivatedRoute` to a `TypedParamMap`
 which can be used to read typed parameters.
@@ -154,9 +154,9 @@ ___
 
 ###  typedUrl
 
-▸ **typedUrl**<**TRouteParams**>(`path`: string, `types`: [ParameterTypeCollection](globals.md#parametertypecollection)‹TRouteParams›, `config?`: [TypedUrlConfig](interfaces/typedurlconfig.md)): *UrlMatcher*
+▸ **typedUrl**‹**TRouteParams**›(`path`: string, `types`: [ParameterTypeCollection](globals.md#parametertypecollection)‹TRouteParams›, `config?`: [TypedUrlConfig](interfaces/typedurlconfig.md)): *UrlMatcher*
 
-*Defined in [lib/typedUrl.ts:60](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/typedUrl.ts#L60)*
+*Defined in [lib/typedUrl.ts:60](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/typedUrl.ts#L60)*
 
 Creates a `UrlMatcher` to match against a router matching notation while allowing to specify type constraints
 
@@ -229,13 +229,13 @@ Name | Type | Description |
 
 ### ▪ **debug**: *object*
 
-*Defined in [lib/utils.ts:3](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/utils.ts#L3)*
+*Defined in [lib/utils.ts:3](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/utils.ts#L3)*
 
 ###  log
 
 ▸ **log**(`x`: string): *void*
 
-*Defined in [lib/utils.ts:4](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/utils.ts#L4)*
+*Defined in [lib/utils.ts:4](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/utils.ts#L4)*
 
 **Parameters:**
 
@@ -249,7 +249,7 @@ Name | Type |
 
 ▸ **warn**(`x`: string): *void*
 
-*Defined in [lib/utils.ts:5](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/utils.ts#L5)*
+*Defined in [lib/utils.ts:5](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/utils.ts#L5)*
 
 **Parameters:**
 

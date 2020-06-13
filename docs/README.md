@@ -5,6 +5,8 @@
 # typed-url
 > Angular Router helper for typed URL parameters.
 
+test
+
 ## Installation
 
 typed-url is available as an NPM package. You can install typed-url

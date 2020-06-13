@@ -1,6 +1,6 @@
 [typed-url](../README.md) › [Globals](../globals.md) › [TypedParam](typedparam.md)
 
-# Class: TypedParam <**T**>
+# Class: TypedParam ‹**T**›
 
 ## Type parameters
 
@@ -31,7 +31,7 @@
 
 \+ **new TypedParam**(`original`: string, `value`: T): *[TypedParam](typedparam.md)*
 
-*Defined in [lib/parameters/TypedParam.ts:3](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/parameters/TypedParam.ts#L3)*
+*Defined in [lib/parameters/TypedParam.ts:3](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/parameters/TypedParam.ts#L3)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ Name | Type |
 
 • **original**: *string*
 
-*Defined in [lib/parameters/TypedParam.ts:5](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/parameters/TypedParam.ts#L5)*
+*Defined in [lib/parameters/TypedParam.ts:5](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/parameters/TypedParam.ts#L5)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **value**: *T*
 
-*Defined in [lib/parameters/TypedParam.ts:6](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/parameters/TypedParam.ts#L6)*
+*Defined in [lib/parameters/TypedParam.ts:6](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/parameters/TypedParam.ts#L6)*
 
 ## Methods
 
@@ -64,6 +64,6 @@ ___
 
 ▸ **toString**(): *string*
 
-*Defined in [lib/parameters/TypedParam.ts:9](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/parameters/TypedParam.ts#L9)*
+*Defined in [lib/parameters/TypedParam.ts:9](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/parameters/TypedParam.ts#L9)*
 
 **Returns:** *string*

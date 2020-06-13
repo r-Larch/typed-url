@@ -48,7 +48,7 @@ const routes = [
 
 ▸ **initialize**(`config`: [TypedUrlConfig](../interfaces/typedurlconfig.md)): *void*
 
-*Defined in [lib/TypeValidator.ts:30](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/TypeValidator.ts#L30)*
+*Defined in [lib/TypeValidator.ts:30](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/TypeValidator.ts#L30)*
 
 This method can be implemented if the TypeValidator need some one time initialization
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **matches**(`value`: string): *boolean*
 
-*Defined in [lib/TypeValidator.ts:36](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/TypeValidator.ts#L36)*
+*Defined in [lib/TypeValidator.ts:36](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/TypeValidator.ts#L36)*
 
 This method gets called to determine whether the provided `value` is of the desired type
 
@@ -84,7 +84,7 @@ ___
 
 ▸ **parse**(`value`: string): *any*
 
-*Defined in [lib/TypeValidator.ts:43](https://github.com/r-Larch/typed-url/blob/a524b0e/projects/typed-url/src/lib/TypeValidator.ts#L43)*
+*Defined in [lib/TypeValidator.ts:43](https://github.com/r-Larch/typed-url/blob/ab194d7/projects/typed-url/src/lib/TypeValidator.ts#L43)*
 
 This method gets called after the `matches(value)` method returned `true`
 Use this method to parse `value` accordingly to the desired type.
